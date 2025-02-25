@@ -1,0 +1,245 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Anta");
+@import url("https://fonts.googleapis.com/css?family=Azeret+Mono");
+@import url("https://fonts.googleapis.com/css?family=Jersey+20");
+@import url("https://fonts.googleapis.com/css?family=Gugi");
+@import url("https://fonts.googleapis.com/css?family=Atomic+Age");
+@import url("https://fonts.googleapis.com/css?family=Coda");
+@import url("https://fonts.googleapis.com/css?family=Exo");
+
+/*.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}*/
+
+body
+{
+	background-color: black; /*#cef;*/
+	color: white;
+	font-family: "Gugi";
+}
+
+h1
+{
+	text-align: center;
+	font-size: 48px;
+}
+
+.startscreen, .endscreen
+{
+	text-align: center;
+}
+
+.instructions
+{
+	font-family: Coda;
+	font-size: 32px;
+	max-width: 50%;
+	margin-left: 25%;
+	margin-top: 50px;
+	background-color: #000000bb;
+}
+
+.startbutton
+{
+	font-size: 32px;
+	height: 50px;
+	width: 150px;
+	border: 2px solid white;
+	border-radius: 10px;
+	margin: 5px;
+}
+
+.mettatonimg
+{
+	position: fixed;
+	top: 0px;
+	right: 0px;
+	height: 300px;
+	z-index: -1;
+}
+
+.wordbox
+{
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+
+.boxline
+{
+	text-align: center;
+	margin-bottom: 5px;
+}
+
+.lettersquare
+{
+	text-align: center;
+	font-size: 52px;
+	height: 80px;
+	width: 80px;
+	border: 2px solid #888;
+	border-radius: 6%;
+	display: inline-block;
+	margin-left: 5px;
+	margin-right: 5px;
+	font-family: Coda;
+	background-color: black;
+}
+.completesquare
+{
+	background-color: #222; /*#356*/
+	color: #999; /*#acd;*/
+	border-color: #555;
+}
+
+.wordbox.inactive .lettersquare:not(.completesquare)
+{
+	background-color: #666;
+	color: #ccc;
+	border-color: black;
+}
+
+.lettersquare.spacesquare
+{
+	border: none;
+	background-color: transparent !important;
+	width: 30px;
+}
+
+.categoryname
+{
+	font-size: 28px;
+	text-align: right;
+	color: yellow;
+	position: fixed;
+	bottom: 0px;
+	right: 15px;
+	z-index: -1;
+}
+
+.score
+{
+	font-size: 28px;
+	text-align: center;
+	color: lime;
+	position: fixed;
+	bottom: 0px;
+	left: 15px;
+	z-index: -1;
+}
+
+.quizbox
+{
+	text-align: center;
+}
+
+.quizquestion
+{
+	font-size: 28px;
+	background-color: #000000bb;
+	width: fit-content;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.quizanswers
+{
+	max-width: 750px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.quizbutton
+{
+	text-align: center;
+	font-size: 32px;
+	height: 100px;
+	width: 300px;
+	border: 2px solid white;
+	border-radius: 10px;
+	display: inline-block;
+	margin: 5px;
+	background-color: black;
+	color: white;
+}
+
+.quizimg
+{
+	max-width: 600px;
+	max-height: 350px;
+}
+
+.correctAnswer
+{
+	background-color: #adeb98;
+	border-color: #0c7029;
+	color: black;
+}
+.incorrectAnswer
+{
+	background-color: #222;
+	color: 999;
+	border-color: black;
+}
+
+.stattable td
+{
+	text-align: right;
+	padding: 3px 10px;
+}
+.stattable td:last-child
+{
+	color: lime;
+	font-weight: bold;
+}
+
+#timer
+{
+	font-family: Azeret Mono;
+	font-size: 36px;
+	text-align: center;
+	position: fixed;
+	top: 15px;
+	left: 15px;
+	border: 2px solid red;
+	padding: 5px 15px;
+}
+#gameover
+{
+	font-size: 24px;
+	text-align: center;
+}
